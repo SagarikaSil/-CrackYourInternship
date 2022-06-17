@@ -3,6 +3,7 @@
 // The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
 // Follow-up: Could you solve the problem in linear time and in O(1) space?
 
+// method1
 class Solution {
 public:
     int majorityElement(vector<int>& nums) {
@@ -21,10 +22,11 @@ public:
     }
 };
 
-// class Solution {
-// public:
-//     int majorityElement(vector<int>& nums) {
-//         sort(nums.begin(),nums.end());
-//         return nums[nums.size()/2];
-//     }
-// };
+// method2
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        sort(nums.begin(),nums.end());
+        return nums[nums.size()/2];
+    }
+};
